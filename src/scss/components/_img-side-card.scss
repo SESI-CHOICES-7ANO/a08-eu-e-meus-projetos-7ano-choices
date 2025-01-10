@@ -1,0 +1,40 @@
+
+.img-side-card {
+  display: flex;
+  align-items: center;
+
+
+  .card {
+    z-index: 2;
+    position: relative;
+
+    
+    padding-left: 20px;
+    width: 55%;
+    border-radius: 0 $border-radius-lg $border-radius-lg 0;
+    .card-content{
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+   
+    .card {
+      width: 100%;
+      border-radius: $border-radius-lg;
+    }
+  }
+  @include mobile {
+    flex-direction: column;
+   
+    .card {
+      width: 100%;
+      border-radius: $border-radius-lg;
+      padding: 0;
+      .card-content{
+        padding: 16px;
+      }
+    }
+  }
+}

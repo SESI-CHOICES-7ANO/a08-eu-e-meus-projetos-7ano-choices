@@ -1,0 +1,168 @@
+// ---------------------------------------------------------
+// Tratamento Aula específica
+// ---------------------------------------------------------
+
+#introdução {
+  background-color: #eff1f2;
+}
+
+
+
+
+.clicker {
+  cursor: pointer;
+  //  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+  transition: all 0.4s ease 0s;
+}
+
+.clicker:hover {
+  background: #f1e86f;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+  //  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#aula {
+  border-radius: 23px;
+  background-color: var(--md-sys-color-background);
+  margin-top: -35px;
+  margin-bottom: -35px;
+  position: relative;
+  z-index: 10;
+
+  .custom-divider {
+    margin-bottom: -10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pulse {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  animation: pulse 1s infinite;
+  overflow: hidden;
+}
+
+// ALTERAR CLASSES
+.purple-bg {
+  background-color: #5758e3;
+}
+
+.green-bg {
+  background-color: #dfff5a;
+}
+
+.blue-bg {
+  background-color: #6fb8ef;
+}
+
+
+.blue-green-bg {
+  background-image: var(--gradient-blue-green);
+}
+
+.purple-blue-bg {
+  background-color: var(--gradient-purple-blue);
+}
+
+.orange-purple-bg {
+  background-color: var(--gradient-orange-purple);
+}
+
+.dark-gray-light-bg {
+  background-image: var(--gradient-dark-gray-light);
+}
+
+.purple-orange-bg {
+  background-color: var(--gradient-purple-orange);
+}
+
+.blue-lighten {
+  background-color: var(--md-ref-palette-secondary50);
+}
+
+
+
+
+
+
+
+.question-matriz {
+  overflow-x: auto;
+
+  table {
+    table-layout: auto;
+  }
+  th {
+    background-color: var(--tertiary-color);
+    color: #eff1f2;
+  }
+  td {
+    background-color: #fff;
+    text-align: center;
+  }
+  .clicavel {
+    cursor: pointer;
+  }
+
+  th,
+  td {
+    border: 1px solid #b9b9b9;
+  }
+}
+
+
+
+#capa1{
+  background-position: center center;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-image: url("../img/static-01.webp");
+
+
+}
+
+#capa2{
+@extend #capa1;
+background-image: url("../img/static-02.webp");
+
+}
+
+.blocos{
+  display: inline-flex; flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & > div{
+    margin: 10px;
+    padding: 0 40px;
+  }
+}

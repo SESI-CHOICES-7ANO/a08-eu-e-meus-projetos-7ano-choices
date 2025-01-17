@@ -10,7 +10,7 @@ export default {
           </a>
           <ul id="nav-mobile" class="left without-sidebar">
             <li>
-              <a href="#" data-target="slide-out" class="sidenav-trigger">&nbsp;
+              <a href="#" style="pointer-events: none">&nbsp;
               </a>
             </li>
           </ul>

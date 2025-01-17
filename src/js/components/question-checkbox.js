@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      gabaritoQuestoes: { qck1: ["b", "e",] }, // ALTERE AQUI
+      gabaritoQuestoes: { qck1: ["a", "c",] }, // ALTERE AQUI
       formData: {
         qck1: [], // ALTERE AQUI
       },
@@ -27,7 +27,7 @@ export default {
       let correto = `
         <div class="mb-40 question-result question-result__correto">
         <p class="body1 flex--align-center">
-          <b>Parabéns! Pensamentos como este te ajudarão a superar o medo de pedir ajuda e adotar estratégias de estudo colaborativo, você perceberá um aumento na compreensão do conteúdo.
+          <b>Excelente! Essas são atitudes de um verdadeiro líder, democracia e colaboração estratégica. 
           </b>
           <span class="material-symbols-rounded ml-16 mb-4">sentiment_very_satisfied</span>
         </p>
@@ -37,7 +37,7 @@ export default {
         <div class="mb-40 question-result question-result__incorreto">
           <p class="body1 flex--align-center">
              
-            <b>Existem pensamentos mais construtivos que te levarão superar o medo para que você consiga alcançar seus objetivos.</b>
+            <b>Essas ações (controle e/ou desinteresse) não contribuem para uma boa liderança estratégica.</b>
             <span class="material-symbols-rounded mx-16">sentiment_very_dissatisfied</span>
           </p>
         </div>
@@ -58,53 +58,43 @@ export default {
   template: //html
   `
 <!-- Question 1 -->
-<div class="question question--checkbox" id="qck1">
+<div class="question question--checkbox question--dark" id="qck1">
 <form action="get"  @submit.prevent="verificaQuestao('qck1')">
   <p class="body1 mt-2">
     <b>
-    Escolha as opções que melhor representam seus pensamentos perante situações parecidas com a situação apresentada. </b
-    >​
+    Pensando como um líder, escolha a opção que melhor reflete como você abordaria a formação do grupo e o desenvolvimento do negócio para a feira de empreendedorismo. ​
+
+    Lembre-se de selecionar a resposta que mais se alinha com suas atitudes e comportamentos reais.    >​
   </p>
   <p>
     <label>
       <input name="qck1[]"  type="checkbox" value="a" v-model="formData.qck1"  />
       <span>
-      "Será que tem algo errado comigo? Todo mundo parece entender, menos eu.“
-      </span>
+      Abriria espaço para que todos os membros do grupo compartilhassem suas ideias e votaríamos democraticamente na escolha do negócio.      </span>
     </label>
   </p>
   <p>
     <label>
       <input name="qck1[]"  type="checkbox" value="b" v-model="formData.qck1"  />
       <span>
-      "Pedir ajuda é uma atitude inteligente, todos têm dificuldades em alguma coisa."
-      </span>
+      Como tenho uma ideia clara do que seria um negócio de sucesso, eu lideraria o grupo apresentando minha ideia e convencendo os outros a seguirem meu plano.      </span>
     </label>
   </p>
   <p>
     <label>
       <input name="qck1[]" type="checkbox" value="c" v-model="formData.qck1"  />
       <span>
-      "Se eu pedir ajuda, vão pensar que sou burro. Melhor tentar estudar sozinho."
-      </span>
+      Buscaria entender as diferentes ideias dos membros do grupo, identificaria pontos comuns e sugeriria uma abordagem que integrasse as diversas perspectivas.      </span>
     </label>
   </p>
   <p>
     <label>
       <input name="qck1[]" type="checkbox" value="d" v-model="formData.qck1"  />
       <span>
-      "Não adianta, eu sou péssimo nisso. Vou acabar tirando uma nota baixa.“
-      </span>
+      Deixaria que os outros decidissem; não estou muito interessado em liderar ou influenciar as decisões do grupo.      </span>
     </label>
   </p>
-  <p>
-    <label>
-      <input name="qck1[]" type="checkbox" value="e" v-model="formData.qck1"  />
-      <span>
-      "Vou procurar vídeos e materiais visuais que expliquem geometria de uma forma mais fácil de entender."
-      </span>
-    </label>
-  </p>
+
   
   <div class="feedback"></div>
   <input class="mt-24 purple-text btn-large filled waves-effect waves-light bubbly-button" type="submit" value="Responder 👀" />

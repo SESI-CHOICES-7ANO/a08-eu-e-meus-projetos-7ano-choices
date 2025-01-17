@@ -14,12 +14,12 @@ from the Reload Content Package Generator - http://www.reload.ac.uk-->
                         http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
     <organizations default="sesi-mg">
         <organization identifier="sesi-mg" structure="hierarchical">
-            <title>Aula 07 | Eu e meus projetos | CHOICES 7°Ano</title>
+            <title>Aula 08 | Eu e meus projetos | CHOICES 7°Ano</title>
             <item
                 identifier="item-identifier"
                 isvisible="true"
                 identifierref="sco01">
-                <title>Aula 07 | Cultivando as flores da resiliência e da flexibilidade</title>
+                <title>Aula 08 | Que tal descobrir o líder que existe em você?</title>
             </item>
         </organization>
     </organizations>

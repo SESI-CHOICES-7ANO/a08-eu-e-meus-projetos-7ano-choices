@@ -65,6 +65,7 @@ u {
     border-radius: 9px;
     padding-top: 3px;
   }
+  padding-top: 6px;
   border-radius: 9px;
   background-color: $bgColor;
   color: $fontColor;
@@ -81,6 +82,7 @@ u {
 .filled.btn-large:hover {
 
   background-color: var(--quaternary-color);
+  color: var(--primary-color);
   filter: brightness(0.95);
 }
 

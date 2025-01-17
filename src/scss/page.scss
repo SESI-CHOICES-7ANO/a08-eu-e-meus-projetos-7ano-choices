@@ -2,8 +2,14 @@
 // Tratamento Aula específica
 // ---------------------------------------------------------
 
-#introdução {
-  background-color: #eff1f2;
+.full-img{
+  background-position: center center;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-image: url("../img/static-01.webp");
+
+
 }
 
 
@@ -146,7 +152,7 @@
   background-size:  cover;
   background-repeat: no-repeat;
   // background-attachment: fixed;
-  background-image: url("../img/static-01.webp");
+  background-image: url("../img/static-08.webp");
 
 
 }

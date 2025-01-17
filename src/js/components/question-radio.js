@@ -12,10 +12,10 @@ export default {
       let selecionado = event.target.value;
       let correto = `
         <div class="question-result question-result__correto">
-                  <span class="material-symbols-rounded mx-16 ml-16 mb-4">sentiment_very_satisfied</span>
-
+        <img src="src/img/gif-06.webp" alt="correto">
         <p class="body1 flex--align-center">
           <b>Acertou</b>
+          <span class="material-symbols-rounded ml-16 mb-4">sentiment_very_satisfied</span>
         </p>
       </div>
       `;
@@ -46,131 +46,35 @@ export default {
   <!-- Question 1 -->
   <div class="question question--radio question--dark" :id="[id]">
     <p class="body1 mt-2">
-      <b>Para iniciar todo o processo, você colocar o alimento na:</b
+      <b>Lembre-se de selecionar a resposta que mais se alinha com suas atitudes e comportamentos reais.</b
       >​
     </p>
     <p>
-      <label >
+      <label @change="verificaQuestao($event, 'q1')">
         <input name="q1" type="radio" value="a" />
-        <span> <b> </b>Raramente</span>
+        <span> Abriria espaço para que todos os membros do grupo compartilhassem suas ideias e votaríamos democraticamente na escolha do negócio.</span>
       </label>
     </p>
     <p>
-      <label >
+      <label @change="verificaQuestao($event, 'q1')">
         <input name="q1" type="radio" value="b" />
-        <span> <b> </b>Às vezes</span>
+        <span>Como tenho uma ideia clara do que seria um negócio de sucesso, eu lideraria o grupo apresentando minha ideia e convencendo os outros a seguirem meu plano.</span>
       </label>
     </p>
     <p>
-      <label >
+      <label @change="verificaQuestao($event, 'q1')">
         <input name="q1" type="radio" value="c" />
-        <span> <b> </b>Frequentemente</span>
+        <span>Buscaria entender as diferentes ideias dos membros do grupo, identificaria pontos comuns e sugeriria uma abordagem que integrasse as diversas perspectivas.</span>
       </label>
     </p>
+    <p>
+      <label @change="verificaQuestao($event, 'q1')">
+        <input name="q1" type="radio" value="d" />
+        <span>Deixaria que os outros decidissem; não estou muito interessado em liderar ou influenciar as decisões do grupo.</span>
+      </label>
+    </p>
+    <div class="feedback"></div>
   </div>
 
-  <!-- Question 2 -->
-  <div class="question question--radio question--dark mt-40" :id="[id]">
-    <p class="body1 mt-2">
-      <b>Para iniciar todo o processo, você colocar o alimento na:</b
-      >​
-    </p>
-    <p>
-      <label >
-        <input name="q2" type="radio" value="a" />
-        <span> <b> </b>Raramente</span>
-      </label>
-    </p>
-    <p>
-      <label >
-        <input name="q2" type="radio" value="b" />
-        <span> <b> </b>Às vezes</span>
-      </label>
-    </p>
-    <p>
-      <label >
-        <input name="q2" type="radio" value="c" />
-        <span> <b> </b>Frequentemente</span>
-      </label>
-    </p>
-  </div>
-
-   <!-- Question 3 -->
-   <div class="question question--radio question--dark mt-40" :id="[id]">
-   <p class="body1 mt-2">
-     <b>Para iniciar todo o processo, você colocar o alimento na:</b
-     >​
-   </p>
-   <p>
-     <label >
-       <input name="q3" type="radio" value="a" />
-       <span> <b> </b>Raramente</span>
-     </label>
-   </p>
-   <p>
-     <label >
-       <input name="q3" type="radio" value="b" />
-       <span> <b> </b>Às vezes</span>
-     </label>
-   </p>
-   <p>
-     <label >
-       <input name="q3" type="radio" value="c" />
-       <span> <b> </b>Frequentemente</span>
-     </label>
-   </p>
- </div>
-
-  <!-- Question 4 -->
-  <div class="question question--radio question--dark mt-40" :id="[id]">
-    <p class="body1 mt-2">
-      <b>Para iniciar todo o processo, você colocar o alimento na:</b
-      >​
-    </p>
-    <p>
-      <label >
-        <input name="q4" type="radio" value="a" />
-        <span> <b> </b>Raramente</span>
-      </label>
-    </p>
-    <p>
-      <label >
-        <input name="q4" type="radio" value="b" />
-        <span> <b> </b>Às vezes</span>
-      </label>
-    </p>
-    <p>
-      <label >
-        <input name="q4" type="radio" value="c" />
-        <span> <b> </b>Frequentemente</span>
-      </label>
-    </p>
-  </div>
-
-   <!-- Question 5 -->
-   <div class="question question--radio question--dark my-40" :id="[id]">
-   <p class="body1 mt-2">
-     <b>Para iniciar todo o processo, você colocar o alimento na:</b
-     >​
-   </p>
-   <p>
-     <label >
-       <input name="q5" type="radio" value="a" />
-       <span> <b> </b>Raramente</span>
-     </label>
-   </p>
-   <p>
-     <label >
-       <input name="q5" type="radio" value="b" />
-       <span> <b> </b>Às vezes</span>
-     </label>
-   </p>
-   <p>
-     <label >
-       <input name="q5" type="radio" value="c" />
-       <span> <b> </b>Frequentemente</span>
-     </label>
-   </p>
- </div>
   `,
 };
